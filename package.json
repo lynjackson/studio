@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "devy": "webpack-dev-server --open",
+    "buildy": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
@@ -13,5 +15,20 @@
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "sass": "^1.23.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.8.4",
+    "@babel/preset-env": "7.8.4",
+    "@babel/preset-react": "7.8.3",
+    "babel-loader": "8.0.6",
+    "clean-webpack-plugin": "3.0.0",
+    "css-loader": "1.0.1",
+    "html-webpack-plugin": "3.2.0",
+    "style-loader": "0.23.1",
+    "webpack": "4.41.5",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "3.10.3"
   }
 }
