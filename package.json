@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
     "devy": "webpack-dev-server --open",
-    "buildy": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
