@@ -1,6 +1,7 @@
 import React from 'react';
 import '../public/styles/app.css'
 import '../public/styles/header.css'
+import {Link} from 'react-router-dom';
 
 export class Header extends React.Component{
   constructor(props){
@@ -19,9 +20,9 @@ export class Header extends React.Component{
         <div id='header-content'>
           <a id='logo-link_header' href='/'><div id='pt-logo'></div></a>
           <div id='header-links'>
-            <a href='/spaces' className='header-link' style={this.state.spaces}>spaces</a>
-            <a href='/services' className='header-link' style={{opacity: this.state.services.opacity}}>services</a>
-            <a href='/kathy' className='header-link' style={this.state.kathy}>people</a>
+            <Link to='/spaces' className='header-link' style={this.state.spaces}>spaces</Link>
+            <Link to='/services' className='header-link' style={{opacity: this.state.services.opacity}}>services</Link>
+            <Link to='/kathy' className='header-link' style={this.state.kathy}>people</Link>
           </div>
         </div>
       </div>
@@ -33,7 +34,7 @@ export class Header extends React.Component{
       this.setState({spaces: {opacity: 1, borderBottom: '1px solid', borderBottomWidth:1}});
     }
     else if(window.location.pathname === '/kathy'){
-      this.setState({kathy: {opacity: 1, borderBottom: '1px solid', borderBottomWidth:1}});
+      this.setState({kathy: {opacity: 1, width: 'auto', borderBottom: '1px solid', borderBottomWidth:1}});
     }
   }
   

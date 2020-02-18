@@ -27,6 +27,9 @@
     align-items:center;
   }
 
+  /* @keyframes annie{
+    from 
+  } */
   #header-links{
     width:75%;
     position:relative;
@@ -39,10 +42,12 @@
     letter-spacing: -1px;
     text-transform: uppercase;
     
+    
   }
   
   .header-link{
-    color: rgb(0,0,0)
+    color: rgb(0,0,0);
+    transition: opacity 5s;
   }
   
   #pt-logo{

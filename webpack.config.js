@@ -17,6 +17,11 @@ module.exports = {
   devServer: {
     contentBase: './dist',
     port: 3000,
+    publicPath: '/',
+    //publicPath allows you to specify the base path for all the assets within your application. 
+    historyApiFallback: true,
+    //historyAPIFallback will redirect 404s to /index.html.
+    
     // publicPath: "http://localhost:3000/dist/",
     // hotOnly: true
   },

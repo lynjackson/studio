@@ -9,8 +9,8 @@ import '../public/styles/css/contact.css';
 
 
 class Home extends React.Component{
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state={
       load: 'no',
       test: 1,
@@ -22,7 +22,9 @@ class Home extends React.Component{
           {/* <div style={{display:(this.state.load ==='no')?'flex':'none',width:'100vw', height:'100vh', position:'fixed', backgroundColor:'white'}}></div> */}
           <Head> <link rel="stylesheet" href="https://use.typekit.net/ice5yhp.css"/> <title>Perfect Touch Studio</title> <link rel="icon" href="../favicon.ico"></link> <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script></Head>
           {/* <div id='chromebar'></div> */}
-          <Header />
+          {/* <Header /> */}
+          
+          {this.props.children}
     
           <div id='above-fold_home'>
             <div id='image_home' onLoad={()=>{this.setState({load:'yea'})}}></div>
